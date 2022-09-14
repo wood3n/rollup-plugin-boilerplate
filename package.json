@@ -1,0 +1,37 @@
+{
+  "name": "rollup-plugin-boilerplate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "wood3n",
+  "description": "rollup-plugin boilerplate, support typescript",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "typescript",
+    "typescript-node",
+    "node",
+    "node-esmodule"
+  ],
+  "homepage": "https://github.com/wood3n/rollup-plugin-boilerplate#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-plugin-node": "^11.1.0",
+    "typescript": "^4.8.3"
+  }
+}
