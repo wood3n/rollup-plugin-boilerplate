@@ -13,6 +13,7 @@ module.exports = {
   },
   "rules": {
     "indent": ["error", 2],
+    "semi": ["error", "always"],
     "node/exports-style": ["error", "module.exports"],
     "node/file-extension-in-import": ["error", "always"],
     "node/prefer-global/buffer": ["error", "always"],
@@ -21,6 +22,12 @@ module.exports = {
     "node/prefer-global/url-search-params": ["error", "always"],
     "node/prefer-global/url": ["error", "always"],
     "node/prefer-promises/dns": "error",
-    "node/prefer-promises/fs": "error"
+    "node/prefer-promises/fs": "error",
+    "object-curly-spacing": ["error", "always"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "key-spacing": ["error", { "afterColon": true }],
+    "space-before-function-paren": ["error", { "anonymous": "never", "named": "never", "asyncArrow": "always" }],
+    "func-call-spacing": ["error", "never"],
+    "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }]
   }
-}
+};

@@ -1,9 +1,7 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "allowJs": true
+    "declaration": false
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["rollup.config.ts"]
 }

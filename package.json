@@ -5,6 +5,7 @@
   "author": "wood3n",
   "description": "rollup-plugin boilerplate, support typescript",
   "keywords": [
+    "boilerplate",
     "rollup",
     "rollup-plugin",
     "typescript",
@@ -18,20 +19,29 @@
   },
   "type": "module",
   "main": "lib/index.js",
-  "files": ["lib"],
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "engines": {
-    "node": ">=16"
+    "node": ">=12"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rollup -c rollup.config.ts --configPlugin typescript -w",
+    "build": "rollup -c rollup.config.ts --configPlugin typescript"
+  },
+  "peerDependencies": {
+    "rollup": "^1.20.0||^2.0.0"
   },
   "devDependencies": {
-    "@tsconfig/node16": "^1.0.3",
+    "@rollup/plugin-typescript": "^8.5.0",
     "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "eslint": "^8.23.1",
     "eslint-plugin-node": "^11.1.0",
+    "rollup": "^2.79.0",
+    "tslib": "^2.4.0",
     "typescript": "^4.8.3"
   }
 }
